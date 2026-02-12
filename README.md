@@ -1,6 +1,6 @@
 # Can a Simple Automated AI Pipeline Solve Research-Level Mathematical Problems?
 
-> 一个 **自动化 AI 数学推理** 的开源项目 —— 首次系统评估下一代大语言模型在 **研究级数学问题** 上的真实能力，包含 ICCM 官方挑战题、First Proof 未发表研究题、完整 AI 解答及 Lean 4 形式化验证尝试。
+> 一个 **自动化 AI 数学推理** 的开源项目 —— 评估下一代大语言模型在 **研究级数学问题** 上的真实能力，包含 ICCM 官方挑战题、First Proof 未发表研究题、完整 AI 解答及 Lean 4 形式化验证尝试。
 
 [![arXiv](https://img.shields.io/badge/arXiv-2602.05192-b31b1b)](https://arxiv.org/abs/2602.05192)
 [![GitHub](https://img.shields.io/badge/GitHub-ml1301215-blue?logo=github)](https://github.com/ml1301215)
@@ -82,22 +82,6 @@
 | **ICCM Set 3**         | 12+    | 部分尝试   | 猜想部分：AI 承认失败；<br>CY 问题：未验证 | ⏳ 待领域专家审阅   |
 | **First Proof**        | 10     | 10 (100%)  | **Problem 4** 已严格验证（数学博士团队）<br>其余9题待验证 | 🟡 验证瓶颈           |
 
-
----
-
-## 🧠 核心方法论
-
-我们的流水线基于 [Huang et al. (2025)] 的自动化框架，针对研究级问题做出两项关键改进：
-
-1. **领域自适应提示优化**  
-   不再局限于初等竞赛策略，而是**引入研究生层次的概念框架**（层论、同调代数、辛几何等），并通过少量示例引导模型使用高级数学语言。
-
-2. **引文增强验证（Citation-Augmented Verification）**  
-   强制要求模型**为每一个非平凡定理/引理提供具体参考文献**（如 `Kashiwara & Schapira, 2006, §8.2`），并在证明中解释该引用的逻辑作用。这一机制**极大地抑制了定理幻觉**，使证明可追溯、可复现。
-
-> ✅ **验证实验**：我们选取 Kashiwara《范畴与层》中的代表性习题进行测试，AI 不仅给出正确证明，且**精准引用书中相应章节**，证明该方法的有效性。
-
----
 
 ## 🔬 Lean 4 形式化探索
 
