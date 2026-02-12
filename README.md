@@ -17,7 +17,7 @@
 ├── 阶段性paper.pdf           # 对应论文
 ├── Prob1_1.lean              # Lean 4 形式化证明（潜在冠军问题）
 ├── Problem_sets/             # 习题题目
-│   ├── ICCM_problem_sets/    # ICCM 问题题
+│   ├── ICCM_problem_sets/    # ICCM 习题集
 │   ├── First_Proof_problem_set/  # 初次证明习题集
 │   └── Exercises_from_Kasiwara/  # Kashiwara 范畴论习题
 └── Solutions_by_ai/          # AI 辅助解答
