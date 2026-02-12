@@ -1,0 +1,1 @@
+3. Let p be a prime number. Find the number of subgroups of order p^3 in Z/p^3 ×(Z/p^2)^2×(Z/p)^3.

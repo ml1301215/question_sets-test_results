@@ -1,0 +1,1 @@
+2. (Whitehead Conjecture) Is every connected subcomplex of a two-dimensional aspherical CW complex itself aspherical? Prove or disprove.

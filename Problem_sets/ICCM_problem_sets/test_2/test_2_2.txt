@@ -1,0 +1,1 @@
+Problem 2. Let u(x,y) be a smooth function on the unit disk, vanishing on the boundary. Prove that there exists a constant C independent of u such that if in the disk we have ∂²u/∂x² > 0, and ∂²u/∂x² ∂²u/∂y² - (∂²u/∂x∂y)² = 1, then u(x,y) ≥ C on the disk. (Hint: Consider the Legendre transform.)

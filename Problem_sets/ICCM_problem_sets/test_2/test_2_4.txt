@@ -1,0 +1,4 @@
+Problem 4. The goal of this problem is to find out all integer solutions of the equation x^2 + 13 = y^3. You can use the fact that the class number of K := Q(√−13) is 2 without proof.
+1. Find the ring of integers O of K = Q(√−13), and find an ideal I of O representing the non-unit element (i.e. not principal ideal) in the class group of K.
+2. Show that the ideals (x + √−13) and (x − √−13) are coprime in O.
+3. Find all the solutions (x,y) ∈ Z^2.

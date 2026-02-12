@@ -1,0 +1,1 @@
+1. (Generating Hypotheses Conjecture)Let f: X → Y be a map between finite spectra. If the induced map on homotopy groups f_∗: π_∗(X) → π_∗(Y) is zero, is f necessarily null-homotopic? Prove or disprove.

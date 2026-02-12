@@ -1,0 +1,1 @@
+4.  Let f(z) = (z^2 +1)^(−1)(z −2)^(−1). Calculate the Laurent series of f(z) in the annulus {z ∈ C|1 < |z| < 2}.

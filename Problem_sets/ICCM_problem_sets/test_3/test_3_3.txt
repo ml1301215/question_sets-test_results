@@ -1,0 +1,4 @@
+3. (May Spectral Sequence Conjecture) Consider the E_2-term of the May spectral sequence, which is isomorphic to the homology of the differential graded algebra X = F_2[R_ij | 0 ≤ i < j] with grading |R_ij|_(s,t,w) = (1, 2^j - 2^i, j - i - 1) and differential d(Rij) = Σ_{i<k<j} R_ik R_kj. Prove or disprove the following statements about E_2 = H(X,d):
+   (a) E2 is nilpotent-free.
+   (b) The third grading w of E_2 is concentrated in even degrees.
+   (c) All indecomposable elements of E_2 are generated either by R_ij^2 or by determinants of certain submatrices of (R_ij), where R_ij = 0 for i ≥ j.

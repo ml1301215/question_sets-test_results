@@ -1,0 +1,5 @@
+6. Conjecture Mining from Structured Mathematical Data
+Background. Modern mathematics increasingly produces large, structured datasets of mathematical objects and associated invariants.
+Problem Description. The problem is to extract robust patterns from such data and to formulate precise, falsifiable conjectures that remain stable under dataset extension.
+Current Status. There is currently no systematic pipeline for converting data-driven patterns into rigorous mathematical conjectures.
+What AI Can Do. AI systems can detect stable correlations, propose compact conjectural statements, and actively search for counterexamples, functioning as hypothesis generators alongside human reasoning.

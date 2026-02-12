@@ -1,0 +1,22 @@
+Definitions and Notation
+
+\begin{notation}
+Let $\mathcal{C}$ be a small category.
+\begin{itemize}
+    \item $\mathcal{C}^{\wedge}$ denotes the category of presheaves on $\mathcal{C}$ (i.e., functors $\mathcal{C}^{\mathrm{op}} \to \mathbf{Set}$).
+    \item $\mathrm{h}_{\mathcal{C}}: \mathcal{C} \to \mathcal{C}^{\wedge}$ denotes the Yoneda embedding.
+\end{itemize}
+\end{notation}
+
+\begin{definition}[Yoneda Extension]
+Let $F: \mathcal{C} \to \mathcal{D}$ be a functor. $\widehat{F}: \mathcal{C}^{\wedge} \to \mathcal{D}^{\wedge}$ denotes the \textbf{Yoneda extension} of $F$. It is defined as the left Kan extension of $\mathrm{h}_{\mathcal{D}} \circ F$ along $\mathrm{h}_{\mathcal{C}}$.
+\[
+\widehat{F} := \mathrm{Lan}_{\mathrm{h}_{\mathcal{C}}}(\mathrm{h}_{\mathcal{D}} \circ F)
+\]
+\end{definition}
+
+\begin{definition}[Left Exact Functor]
+A functor $F: \mathcal{C} \to \mathcal{D}$ is called \textbf{left exact} if for every object $Y$ in $\mathcal{D}$, the category $\mathcal{C} \times_{\mathcal{D}} \mathcal{D}_{/Y}$ is a cofiltered category.
+\end{definition}
+
+Exercise 3.5. Let $F: \mathcal{C} \to \mathcal{C}'$ be a functor of small categories. Prove that $F$ is left exact if and only if $\widehat{F}: \mathcal{C}^{\wedge} \to \mathcal{C}'^{\wedge}$ is exact.

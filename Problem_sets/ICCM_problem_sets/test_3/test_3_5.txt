@@ -1,0 +1,12 @@
+5.  Prediction and Explanation of Topological Invariants
+Background. Topological invariants such as Hodge numbers, Euler characteristics, and inter
+section data encode essential geometric information about Calabi–Yau manifolds, yet are often
+expensive to compute from first principles.
+Problem Description. The challenge is to predict such invariants efficiently from simpler com
+binatorial or algebraic data, and to understand which structural features genuinely control their
+values.
+Current Status. Invariant computation is typically construction-dependent and computationally
+intensive, with no general explanatory theory connecting discrete data to global invariants.
+What AI Can Do. AI models can act as fast surrogate predictors and, through interpretability
+techniques, help identify meaningful geometric features and failure regimes that guide theoretical
+understanding.

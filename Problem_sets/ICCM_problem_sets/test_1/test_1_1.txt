@@ -1,0 +1,1 @@
+1.There are 8 students and 3 subjects such that the students have different scores in each subject. A student is called a potential champion if in at least one of the six orderings of the subjects, this student survives to the end if each time we eliminate half of the students by a subject. Find the maximum possible number of potential champions and prove your answer.

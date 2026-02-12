@@ -1,0 +1,1 @@
+5.  Let X,Y be topological spaces, ∼ be an equivalence relation on X. Is the map f: X ×Y/(∼ ×id) → (X/∼)×Y, f([x,y]) = ([x],y) necessarily a homeomorphism?

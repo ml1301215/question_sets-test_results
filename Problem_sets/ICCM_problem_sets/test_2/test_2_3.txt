@@ -1,0 +1,1 @@
+Problem 3. Let D = {z : |z| < 1} ⊂ C be the unit disk and g : D → C be a holomorphic function such that g(0) = 0 and |Re g(z)| < 1 for any z ∈ D. Prove that for any z ∈ D, |g(z)| ≤ (2/π) log((1 + |z|)/(1 - |z|)).

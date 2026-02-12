@@ -1,0 +1,1 @@
+6. Consider a finitely generated commutative graded differential algebra A over a finite field F_p. Is its homology H(A) necessarily a finitely generated algebra?

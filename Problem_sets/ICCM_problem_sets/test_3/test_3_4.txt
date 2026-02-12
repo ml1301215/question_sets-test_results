@@ -1,0 +1,18 @@
+4. Coverage and Completeness of Calabi–Yau Datasets
+Background. Large databases of Calabi–Yau manifolds have been constructed using specific
+geometric frameworks, such as complete intersections in products of projective spaces and hy
+persurfaces in toric varieties. Canonical examples include the Complete Intersection Calabi–Yau
+(CICY) threefolds and the Kreuzer–Skarke classification of reflexive polytopes. These datasets play
+a central role in algebraic geometry, string theory, and related areas.
+
+Problem Description. The central problem is to determine whether existing datasets ade
+quately represent the space of Calabi–Yau manifolds within their respective construction classes.
+More broadly, one would like to understand whether substantial families of Calabi–Yau geome
+tries are missing, rare, or systematically underrepresented due to limitations of the construction
+methods.
+Current Status. Within their defining frameworks, major datasets such as the CICY threefolds
+and the Kreuzer–Skarke list are complete and rigorously classified. However, the relationship
+between these datasets and the full space of Calabi–Yau manifolds remains unclear.
+What AI Can Do. AI methods can analyze dataset structure to identify gaps, redundancies,
+sparsity patterns, and clustering phenomena, and suggest candidate constructions or geometric
+transitions extending beyond known datasets.

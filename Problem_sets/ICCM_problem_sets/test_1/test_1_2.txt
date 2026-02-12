@@ -1,0 +1,1 @@
+2. Let K be the splitting field of x^8 − 2 over Q. Find the degree of the extension [K : Q]. Write down a set of generators of the Galois group Gal(K/Q) and describe how they operate on the roots of x^8 −2.

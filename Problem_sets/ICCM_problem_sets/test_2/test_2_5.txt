@@ -1,0 +1,3 @@
+Problem 5. Let f: S^1 × S^1 → S^1 × S^1 be an orientation-preserving diffeomorphism. Gluing two copies of S^1 × D^2 along f yields an oriented closed 3-manifold L, that is, L = (S^1 × D^2) ⊔ (S^1 × D^2) / ∼, where (x,y) ∼ f(x,y) for (x,y) ∈ S^1 × S^1. Here we view S^1 = ∂D^2.
+1. Find every possible π_1(L) up to isomorphism.
+2. For each result in (1), classify all possible tuples (H_1, H_2, H_3, π_2, π_3) up to isomorphism, where H_i = H_i(L; Z) and π_i = π_i(L).

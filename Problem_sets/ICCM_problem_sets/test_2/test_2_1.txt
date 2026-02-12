@@ -1,0 +1,9 @@
+Problem 1. Let ei (i = 1,...,4) be the standard basis for R^4. Consider the symmetric bilinear form on R^4 defined by (x, y) = x1 y1 + x2 y2 + x3 y3 - x4 y4. A basis fi (i=1,...,4) of R^4 is called orthonormal if (f1, f1) = (f2, f2) = (f3, f3) = 1, (f4, f4) = -1, and (fi, fj) = 0 for i ≠ j. Suppose T is a Lorentz transformation on R^4, that is, a linear transformation such that (T x, T y) = (x, y) for all x, y in R^4. Prove that there exists an orthonormal basis of R^4 such that the matrix of T is block diagonal with blocks of the following types:
+1. A block of size 1 with entry ±1.
+2. A block of size 2 of the form:
+   ⎛cosθ  -sinθ⎞
+   ⎝sinθ   cosθ⎠
+3. A block of size 2 of the form:
+   ± ⎛coshθ  sinhθ⎞or ± ⎛ coshθ  sinhθ ⎞
+      ⎝sinhθ  coshθ⎠        ⎝-sinhθ -coshθ⎠
+4. A block A of size 3 with eigenvalue λ = ±1 such that (A - λI)^3 = 0 but (A - λI)^2 ≠ 0.
