@@ -1,20 +1,23 @@
 # 数学证明与竞赛习题集
 
-> 一个结合 AI 辅助求解与形式化证明的数学问题集项目
+> 一个结合 AI 辅助求解与形式化证明的数学问题集项目 —— 本仓库为对应论文的开源部分
 
 [![GitHub](https://img.shields.io/badge/GitHub-ml1301215-blue?logo=github)](https://github.com/ml1301215)
 
 ## 项目简介
 
-本项目收集了多套数学竞赛与习题集的题目，并提供了 **AI 辅助求解** 与 **Lean 4 形式化证明** 的尝试。通过人机协作的方式，探索将数学问题从自然语言理解、手工推理到机器可验证证明的完整流程。
+本项目是论文 **《阶段性paper》** 的开源配套内容，收集了多套数学竞赛与习题集的题目，并提供了 **AI 辅助求解** 与 **Lean 4 形式化证明** 的尝试。通过人机协作的方式，探索将数学问题从自然语言理解、手工推理到机器可验证证明的完整流程。
+
+📄 **论文**：见根目录 [阶段性paper.pdf](阶段性paper.pdf)
 
 ## 项目结构
 
 ```
 .
+├── 阶段性paper.pdf           # 对应论文
 ├── Prob1_1.lean              # Lean 4 形式化证明（潜在冠军问题）
 ├── Problem_sets/             # 习题题目
-│   ├── ICCM_problem_sets/    # ICCM 竞赛习题
+│   ├── ICCM_problem_sets/    # ICCM 问题题
 │   ├── First_Proof_problem_set/  # 初次证明习题集
 │   └── Exercises_from_Kasiwara/  # Kashiwara 范畴论习题
 └── Solutions_by_ai/          # AI 辅助解答
