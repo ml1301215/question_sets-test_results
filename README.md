@@ -1,110 +1,48 @@
-# Can a Simple Automated AI Pipeline Solve Research-Level Mathematical Problems?
+# Math Research Benchmark
 
-> 一个 **自动化 AI 数学推理** 的开源项目 —— 评估下一代大语言模型在 **研究级数学问题** 上的真实能力，包含 ICCM 官方挑战题、First Proof 未发表研究题、完整 AI 解答及 Lean 4 形式化验证尝试。
+Problem sets and AI-generated solutions from [arXiv:2602.13695](https://arxiv.org/abs/2602.13695) — *Can a Lightweight Automated AI Pipeline Solve Research-Level Mathematical Problems?*
 
-[![arXiv](https://img.shields.io/badge/arXiv-2602.05192-b31b1b)](https://arxiv.org/abs/2602.13695)
-[![GitHub](https://img.shields.io/badge/GitHub-ml1301215-blue?logo=github)](https://github.com/ml1301215)
-[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey)](LICENSE)
-[![Status](https://img.shields.io/badge/status-active-success)]()
+## Contents
 
----
+```
+Problem_sets/
+├── ICCM_problem_sets/
+│   ├── test_1/   # ICCM round 1, 6 problems (text format)
+│   ├── test_2/   # ICCM round 2, 6 problems
+│   └── test_3/   # ICCM 2025, 6 problems
+└── First_Proof_problem_set/
+    └── 10_problems_statements.pdf   # 10 unpublished research problems
 
-## 📖 项目简介
+Solutions_by_ai/
+├── ICCM/1/        # AI solutions to ICCM round 1 (6 PDFs)
+├── ICCM/2/        # AI solutions to ICCM round 2 (6 PDFs)
+└── First_Proof/   # AI candidate proofs for all 10 First Proof problems
+```
 
-**大型语言模型真的能推动数学研究吗？**  
-2026 年，我们正站在一个转折点上。本研究证明：**通过轻量级、纯自然语言的自动化流水线，并引入“引文增强验证”机制**，下一代 LLM（Gemini 3 Pro、GPT‑5.2 Pro）**能够可靠地解决部分研究级数学问题**，而不仅仅是竞赛题。
+`Prob1_1.lean` — Lean 4 formalization attempt for ICCM problem 1-1.
 
-我们的流水线在 **ICCM 官方挑战题**（丘成桐大学生数学竞赛难度）上达到 **100% 解决率**；在 **10 道从未发表的 First Proof 研究题** 上全部生成候选证明，其中 **Problem 4 已通过数学博士团队的严格人工验证**，确认为正确证明。
+## Problem sources
 
-本项目完全开源以下内容：
-- 📄 **论文全文**（含完整方法论、实验设计、结果分析）
-- 📚 **全部题目原文**（ICCM 三组题 + First Proof 十道题）
-- ✅ **AI 生成的自然语言解答**（ICCM 第 1、2 组完整证明；First Proof 全部候选证明）
-- 🧠 **Lean 4 形式化验证尝试**（ICCM 组合题）
-- 🧪 **即将开放**：自动化流水线代码、提示模板、引文验证模块
+**ICCM** (International Congress of Chinese Mathematicians) annual competition problems, difficulty comparable to graduate qualifying exams.
 
----
+**First Proof** — unpublished research-level problems contributed by mathematicians. None had published solutions at the time of the study. Problem 4 has been verified as a correct proof by a mathematics PhD team.
 
-## 📄 论文与引用
-
-**论文标题**：*Can a Simple Automated AI Pipeline Solve Research-Level Mathematical Problems?*  
-**作者**：AI Mathematics Research Team  
-**预印本**：[arXiv:2602.13695](https://arxiv.org/abs/2602.13695)  
+## Paper
 
 ```bibtex
-@misc{meng2026lightweightautomatedaipipeline,
-      title={Can a Lightweight Automated AI Pipeline Solve Research-Level Mathematical Problems?}, 
-      author={Lve Meng and Weilong Zhao and Yanzhi Zhang and Haoxiang Guan and Jiyan He},
-      year={2026},
-      eprint={2602.13695},
-      archivePrefix={arXiv},
-      primaryClass={cs.AI},
-      url={https://arxiv.org/abs/2602.13695}, 
+@misc{meng2026lightweight,
+  title         = {Can a Lightweight Automated AI Pipeline Solve Research-Level Mathematical Problems?},
+  author        = {Lve Meng and Weilong Zhao and Yanzhi Zhang and Haoxiang Guan and Jiyan He},
+  year          = {2026},
+  eprint        = {2602.13695},
+  archivePrefix = {arXiv}
 }
 ```
 
----
+## Author
 
-## 🧩 项目结构
+Lve Meng — [ml130@mail.ustc.edu.cn](mailto:ml130@mail.ustc.edu.cn)
 
-```
-.
-├── README.md
-├── LICENSE
-├── Can a Simple Automated AI Pipeline Solve Research-Level Mathematical Problems.pdf   # 论文全文
-├── Prob1_1.lean                                        # Lean 4 形式化（潜在冠军题）
-│
-├── Problem_sets/                                       # 原始题目
-│   ├── ICCM_problem_sets/                             # ICCM 官方挑战题
-│   │   ├── test_1/                                    # 第1组 6 题
-│   │   ├── test_2/                                    # 第2组 6 题
-│   │   └── test_3/                                    # 第3组 6 题
-│   └── First_Proof_problem_set/                       # First Proof 10 道题
-│
-├── Solutions_by_ai/                                   # AI 生成的自然语言解答
-│   ├── ICCM/                                          # ICCM 第1、2组 PDF 解答
-│   │   ├── 1/                                         # 1_1.pdf ~ 1_6.pdf
-│   │   └── 2/                                         # 2_1.pdf ~ 2_6.pdf
-│   └── First_Proof/                                   # First Proof 10 题候选解答
-│       └── 1.pdf ~ 10.pdf
+## License
 
-```
-
----
-
-## 📊 数据集与结果总览
-
-| 数据集                  | 问题数量 | AI 声称解决 | 人工验证进度                         | 最终状态               |
-|------------------------|--------|------------|--------------------------------------|----------------------|
-| **ICCM Set 1**         | 6      | 6 (100%)   | 全部验证通过（项目组数学成员）       | ✅ 已提交 ICCM 官方    |
-| **ICCM Set 2**         | 6      | 6 (100%)   | 全部验证通过                         | ✅ 已提交 ICCM 官方    |
-| **ICCM Set 3**         | 12+    | 部分尝试   | 猜想部分：AI 承认失败；<br>CY 问题：未验证 | ⏳ 待领域专家审阅   |
-| **First Proof**        | 10     | 10 (100%)  | **Problem 4** 已严格验证（数学博士团队）<br>其余9题待验证 | 🟡 验证瓶颈           |
-
-
-## 🔬 Lean 4 形式化探索
-
-除自然语言证明外，我们对 ICCM 第1组中一道组合题（潜在冠军题）尝试了 **Lean 4 形式化验证**。  
-文件位置：`Prob1_1.lean`
-目前已完成部分主要引理的形式化，**完整形式化证明仍在进行中**。
-
----
-
-
-## 📜 许可证
-
-本项目的**论文、题目文本、AI 生成解答**采用 **CC BY-NC 4.0 许可证**。  
-**代码部分**采用 **MIT 许可证**，敬请留意各子目录下的单独声明。
-
----
-
-## 📬 联系方式
-
-- GitHub Issues：[https://github.com/ml1301215/.../issues](https://github.com/ml1301215/...)  
-- 论文通讯作者（项目维护者）：可通过 GitHub 直接 @ml1301215
-
----
-
-
-**如果本项目对您的研究有所启发，欢迎引用我们的论文，或给一颗 ⭐ 支持！**
-```
+CC BY-NC 4.0
