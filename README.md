@@ -1,4 +1,4 @@
-# Math Research Database
+# MARD
 
 Problem sets and AI-generated solutions from [arXiv:2602.13695](https://arxiv.org/abs/2602.13695) — *Can a Lightweight Automated AI Pipeline Solve Research-Level Mathematical Problems?*
 
